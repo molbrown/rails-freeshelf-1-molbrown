@@ -5,7 +5,7 @@
     </div>
     <div class="input-field">
         <%= f.label :author %>
-        <%= f.text_field :author %>
+        <%= f.collection_select(:author_id, Author.all, :id, :name) %>
     </div>
     <div class="input-field">
         <%= f.label :language %>

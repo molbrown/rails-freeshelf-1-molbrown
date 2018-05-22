@@ -6,6 +6,6 @@
 <div>Link: <%= @book.url %></div>
 
 <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-outline-primary" %>
-<%= link_to 'Delete', book_path(@book), class: "btn btn-outline-primary", method: :delete, data: { confirm: 'Are you sure?' } %> %>
+<%= link_to 'Delete', book_path(@book), class: "btn btn-outline-primary", method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <%= link_to 'Home', books_path, class: "btn btn-outline-primary" %>
