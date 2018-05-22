@@ -1,7 +1,7 @@
 <h1>Welcome to FreeShelf</h1>
 <h2>A library of online programming books, available for free</h2>
 
-<link>
+<%= link_to 'Add a Book', new_book_path, class: "btn btn-outline-primary" %>
 
 <table>
     <thead>
@@ -9,6 +9,7 @@
             <th>Book</th>
             <th>Author</th>
             <th>Language</th>
+            <th> </th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,7 @@
                 <td><%= book.title %></td>
                 <td><%= book.author.name %></td>
                 <td><%= book.language %></td>
+                <td><%= link_to 'View Details', book_path(book), class: "btn btn-outline-primary" %></td>
             </tr>
         <% end %>
     </tbody>
