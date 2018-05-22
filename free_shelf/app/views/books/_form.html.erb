@@ -6,9 +6,7 @@
     <div class="form-group">
         <%= f.label :author %>
         <%= f.collection_select :author_id, Author.all, :id, :name, {prompt: "Select author"}, {class: "form-control"} %>
-
         <small id="authorHelp" class="form-text text-muted">Don't see your author? <%= link_to 'Add a new author here.', new_author_path, class: "btn btn-outline-secondary btn-sm" %></small>
-
     </div>
     <div class="form-group">
         <%= f.label :language %>
@@ -22,5 +20,9 @@
         <%= f.label :url %>
         <%= f.text_field :url, class: "form-control" %>
     </div>
+    <div class="form-group">
+        <%= f.label :image %>
+        <%= f.file_field :image %>
+  </div>
     <button class="btn btn-primary mb-2" type="submit">Save Book</button>
 <% end %>

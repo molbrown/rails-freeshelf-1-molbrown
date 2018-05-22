@@ -10,10 +10,13 @@
 #  language    :string
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  image       :string
 #
 
 class Book < ApplicationRecord
   belongs_to :author
+
+  # mount_uploader :image, ImageUploader
 
   validates :title, presence: true
   validates :author, presence: true
