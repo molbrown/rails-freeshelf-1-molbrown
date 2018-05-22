@@ -3736,3 +3736,382 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 104ms (Views: 88.6ms | ActiveRecord: 11.2ms)
 
 
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:35:25 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (28.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (6.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (105.7ms)
+Completed 200 OK in 284ms (Views: 214.9ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:35:51 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (2.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 411ms (Views: 383.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:36:16 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (5.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 154ms (Views: 139.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:36:35 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 100ms (Views: 92.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:36:55 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 132ms (Views: 121.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:38:19 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 164ms (Views: 146.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:38:39 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 94ms (Views: 82.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:39:21 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 140ms (Views: 132.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:41:46 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 168ms (Views: 145.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2018-05-22 13:42:53 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/books/_form.html.erb:8
+  Rendered books/_form.html.erb (84.7ms)
+  Rendered books/new.html.erb within layouts/application (113.8ms)
+Completed 200 OK in 205ms (Views: 177.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:42:55 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 109ms (Views: 95.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:43:38 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 103ms (Views: 95.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2018-05-22 13:43:41 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mAuthor Load (1.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:5
+  Rendered books/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 96ms (Views: 82.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2018-05-22 13:43:51 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:5
+  Rendered books/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 115ms (Views: 108.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:43:53 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 106ms (Views: 99.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2018-05-22 13:43:55 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (3.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  Rendered authors/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 101ms (Views: 78.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/authors/14/edit" for 127.0.0.1 at 2018-05-22 13:43:57 -0400
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mAuthor Load (4.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:25
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_aform.html.erb (5.4ms)
+  Rendered authors/edit.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 96ms (Views: 64.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2018-05-22 13:44:35 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.9ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  Rendered authors/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 119ms (Views: 105.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2018-05-22 13:44:37 -0400
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_aform.html.erb (3.9ms)
+  Rendered authors/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 85ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2018-05-22 13:44:40 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (1.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (2.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (1.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  Rendered authors/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 115ms (Views: 104.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/authors/18/edit" for 127.0.0.1 at 2018-05-22 13:44:45 -0400
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:25
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_aform.html.erb (3.0ms)
+  Rendered authors/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 96ms (Views: 85.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2018-05-22 13:44:48 -0400
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:15
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (4.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/authors/index.html.erb:18
+  Rendered authors/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 95ms (Views: 81.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:44:50 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (4.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (3.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 88ms (Views: 74.2ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2018-05-22 13:44:53 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mAuthor Load (6.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:5
+  Rendered books/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 90ms (Views: 76.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:44:55 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (1.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (12.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 95ms (Views: 75.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2018-05-22 13:44:56 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  [1m[36mAuthor Load (9.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/books/_form.html.erb:8
+  Rendered books/_form.html.erb (20.8ms)
+  Rendered books/new.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 99ms (Views: 86.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-22 13:44:59 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (8.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  [1m[36mAuthor Load (20.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (1.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:20
+  Rendered books/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 103ms (Views: 69.0ms | ActiveRecord: 30.4ms)
+
+
