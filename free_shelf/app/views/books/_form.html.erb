@@ -1,24 +1,26 @@
 <%= form_for(@book) do |f| %>
-    <div class="input-field">
+    <div class="form-group">
         <%= f.label :title %>
-        <%= f.text_field :title %>
+        <%= f.text_field :title, class: "form-control" %>
     </div>
-    <div class="input-field">
+    <div class="form-group">
         <%= f.label :author %>
-        <%= f.collection_select(:author_id, Author.all, :id, :name) %>
-        <div>Don't see your author? <%= link_to 'Add a new author here.', new_author_path, class: "btn btn-outline-primary" %></div>
+        <%= f.collection_select :author_id, Author.all, :id, :name, {prompt: "Select author"}, {class: "form-control"} %>
+
+        <small id="authorHelp" class="form-text text-muted">Don't see your author? <%= link_to 'Add a new author here.', new_author_path, class: "btn btn-outline-secondary btn-sm" %></small>
+
     </div>
-    <div class="input-field">
+    <div class="form-group">
         <%= f.label :language %>
-        <%= f.text_field :language %>
+        <%= f.text_field :language, class: "form-control" %>
     </div>
-    <div class="input-field">
+    <div class="form-group">
         <%= f.label :description %>
-        <%= f.text_field :description %>
+        <%= f.text_area :description, class: "form-control" %>
     </div>
-    <div class="input-field">
+    <div class="form-group">
         <%= f.label :url %>
-        <%= f.text_field :url %>
+        <%= f.text_field :url, class: "form-control" %>
     </div>
-    <button type="submit">Save Book</button>
+    <button class="btn btn-primary mb-2" type="submit">Save Book</button>
 <% end %>

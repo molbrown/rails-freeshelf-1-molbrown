@@ -1,11 +1,17 @@
+<div class="container">
 <h1><%= @book.title %></h1>
-
+<div class='row'>
+<div class='col'>
 <div>Author: <%= @book.author.name %></div>
 <div>Language: <%= @book.language %></div>
-<div>Description: <%= @book.description %></div>
-<div>Link: <%= @book.url %></div>
+</div>
+<div class='col'>
+<div class='my-2'>Description: <%= @book.description %></div>
+<div class='m-2'>Link: <%= @book.url %></div>
 
 <%= link_to 'Edit', edit_book_path(@book), class: "btn btn-outline-primary" %>
 <%= link_to 'Delete', book_path(@book), class: "btn btn-outline-primary", method: :delete, data: { confirm: 'Are you sure?' } %>
-
+</div>
+</div>
 <%= link_to 'Home', books_path, class: "btn btn-outline-primary" %>
+</div>
