@@ -1,0 +1,49 @@
+  [1m[35m (866.6ms)[0m  [1m[35mCREATE DATABASE "free_shelf_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (621.8ms)[0m  [1m[35mCREATE DATABASE "free_shelf_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (53.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (28.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4637570525149033815)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAuthors (20180521204301)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (35.4ms)[0m  [1m[35mCREATE TABLE "authors" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180521204301_create_authors.rb:3
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_authors_on_name" ON "authors"  ("name")[0m
+  ↳ db/migrate/20180521204301_create_authors.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180521204301"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateBooks (20180521204407)
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (36.5ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "author_id" bigint, "title" character varying, "description" character varying, "url" character varying, "language" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_53d51ce16a"
+FOREIGN KEY ("author_id")
+  REFERENCES "authors" ("id")
+)[0m
+  ↳ db/migrate/20180521204407_create_books.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_books_on_author_id" ON "books"  ("author_id")[0m
+  ↳ db/migrate/20180521204407_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180521204407"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (19.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-21 21:01:11.852207"], ["updated_at", "2018-05-21 21:01:11.852207"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4637570525149033815)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9

@@ -1,0 +1,8 @@
+<h1><%= @book.title %></h1>
+
+<div><%= @book.author.name %></div>
+<div><%= @book.language %></div>
+<div><%= @book.description %></div>
+<div><%= @book.url %></div>
+
+<%= link_to 'Home', albums_path, class: "btn btn-outline-primary" %>

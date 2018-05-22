@@ -1,0 +1,23 @@
+<h1>Welcome to FreeShelf</h1>
+<h2>A library of online programming books, available for free</h2>
+
+<link>
+
+<table>
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @books.each do |book| %>
+            <tr>
+                <td><%= book.title %></td>
+                <td><%= book.author.name %></td>
+                <td><%= book.language %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

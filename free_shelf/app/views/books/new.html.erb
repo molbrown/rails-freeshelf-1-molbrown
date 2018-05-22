@@ -1,0 +1,26 @@
+<h1>Add a New Book to our Library</h1>
+<h2>Thank you!</h2>
+
+<%= form_for(@book) do |f| %>
+    <div class="input-field">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+    </div>
+    <div class="input-field">
+        <%= f.label :author %>
+        <%= f.text_field :author %>
+    </div>
+    <div class="input-field">
+        <%= f.label :language %>
+        <%= f.text_field :language %>
+    </div>
+    <div class="input-field">
+        <%= f.label :description %>
+        <%= f.text_field :description %>
+    </div>
+    <div class="input-field">
+        <%= f.label :url %>
+        <%= f.text_field :url %>
+    </div>
+    <button type="submit">Save Book</button>
+<% end %>
