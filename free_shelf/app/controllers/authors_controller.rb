@@ -1,6 +1,7 @@
 class AuthorsController < ApplicationController
     def index
         @authors = Author.all
+        @books = Book.all
     end
 
     def new
@@ -28,7 +29,7 @@ class AuthorsController < ApplicationController
         @author = Author.find(params[:id])
         
         if @author.update(author_params)
-            redirect_to @author 
+            redirect_to authors_path 
         else
             redirect_to edit_author_path
         end
