@@ -6,6 +6,7 @@
     <div class="input-field">
         <%= f.label :author %>
         <%= f.collection_select(:author_id, Author.all, :id, :name) %>
+        <div>Don't see your author? <%= link_to 'Add a new author here.', new_author_path, class: "btn btn-outline-primary" %></div>
     </div>
     <div class="input-field">
         <%= f.label :language %>

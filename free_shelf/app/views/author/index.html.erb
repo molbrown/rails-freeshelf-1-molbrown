@@ -1,0 +1,22 @@
+<h1>Authors</h1>
+
+<%= link_to 'Add an Author', new_author_path, class: "btn btn-outline-primary" %>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Books</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @authors.each do |author| %>
+            <tr>
+                <td><%= author.name %></td>
+                <td><%= book.language %></td>
+                <td><%= link_to 'Edit Author', edit_author_path(book), class: "btn btn-outline-primary" %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
