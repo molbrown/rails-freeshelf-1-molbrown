@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :authors
 
+  resources :users
+
+  resources :checkouts
+
   root 'books#index'
 
 end

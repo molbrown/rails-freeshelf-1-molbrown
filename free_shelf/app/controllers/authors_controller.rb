@@ -11,7 +11,7 @@ class AuthorsController < ApplicationController
     def create
         @author = Author.new(author_params)
         if @author.save
-            redirect_to new_book_path
+            redirect_to new_book_path , notice: "Your author was added successfully."
         else
             render :new
         end

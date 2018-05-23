@@ -1,11 +1,12 @@
 <div class="container">
+<div class="text-right text-secondary w-100 my-3">Logged in as <%= current_user.username %></div>
 <h1 class='my-3'><%= @book.title %></h1>
 <div class='row'>
-<div class='col'>
+<div class='col-4'>
 <div>Author: <%= @book.author.name %></div>
 <div>Language: <%= @book.language %></div>
 </div>
-<div class='col'>
+<div class='col-8'>
 <div class='my-2'>Description: <%= @book.description %></div>
 <div class='m-2'>Link: <%= @book.url %></div>
 
