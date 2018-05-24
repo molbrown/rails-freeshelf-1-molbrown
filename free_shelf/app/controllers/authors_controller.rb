@@ -1,7 +1,7 @@
 class AuthorsController < ApplicationController
     def index
-        @authors = Author.all
-        @books = Book.all
+        @authors = Author.all.order('name ASC')
+        @books = Book.all.order('title ASC')
     end
 
     def new
