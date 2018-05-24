@@ -6195,3 +6195,1747 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 82ms (Views: 73.1ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/books/2" for 127.0.0.1 at 2018-05-23 09:08:20 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (18.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:6
+  Rendered books/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 217ms (Views: 159.6ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 09:08:26 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:21
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (1.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (1.0ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  Rendered books/index.html.erb within layouts/application (66.9ms)
+Completed 200 OK in 160ms (Views: 148.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2018-05-23 09:08:32 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (2.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:6
+  Rendered books/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 164ms (Views: 129.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 09:08:34 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (2.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:21
+  [1m[36mAuthor Load (2.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:24
+  Rendered books/index.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 166ms (Views: 152.5ms | ActiveRecord: 7.3ms)
+
+
+  [1m[36mBook Load (3.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/books" for 127.0.0.1 at 2018-05-23 10:25:34 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (7.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:23
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (123.4ms)
+Completed 200 OK in 212ms (Views: 139.3ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 10:26:12 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 147ms (Views: 134.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:26:15 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ArgumentError (Unsupported argument type: 1 (Integer)):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:28:21 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (23.2ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 173ms (Views: 109.2ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:28:59 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.8ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 83ms (Views: 74.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:42:31 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.9ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (37.6ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 14.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:         </tr>
+    13:     </thead>
+    14:     <tbody>
+    15:         <% @checkouts.each do |checkout| %>
+    16:             <tr>
+    17:                 <td><%= Book.find(params[checkout.book_id]).title %></td>
+    18:                 <td><%= Book.find(params[checkout.book_id]).language %></td>
+  
+app/views/checkouts/index.html.erb:15:in `_app_views_checkouts_index_html_erb___3181035650136727081_70230276443640'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:45:16 -0400
+Processing by CheckoutsController#index as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:46:22 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.5ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" WHERE "checkouts"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 404 Not Found in 35ms (ActiveRecord: 9.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Checkout with 'id'=all):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-23 10:46:52 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (66.7ms)
+Completed 200 OK in 135ms (Views: 106.0ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2018-05-23 10:46:56 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 91ms (Views: 80.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/checkouts/new.2" for 127.0.0.1 at 2018-05-23 10:46:58 -0400
+Processing by CheckoutsController#new as 
+Completed 500 Internal Server Error in 480ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `checkout_params' for #<CheckoutsController:0x00007fbf82ebd180>
+Did you mean?  checkout_path):
+  
+app/controllers/checkouts_controller.rb:8:in `new'
+Started GET "/checkouts/new.2" for 127.0.0.1 at 2018-05-23 10:47:24 -0400
+Processing by CheckoutsController#new as 
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: checkout):
+  
+app/controllers/checkouts_controller.rb:31:in `checkout_params'
+app/controllers/checkouts_controller.rb:8:in `new'
+Started GET "/" for 127.0.0.1 at 2018-05-23 10:48:03 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 132ms (Views: 83.0ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 10:48:06 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.5ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" WHERE "checkouts"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 404 Not Found in 12ms (ActiveRecord: 7.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Checkout with 'id'=all):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-23 10:48:10 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 101ms (Views: 91.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/books/4" for 127.0.0.1 at 2018-05-23 10:49:13 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (1.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 97ms (Views: 82.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:49:18 -0400
+Processing by CheckoutsController#new as 
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: checkout):
+  
+app/controllers/checkouts_controller.rb:31:in `checkout_params'
+app/controllers/checkouts_controller.rb:8:in `new'
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:50:12 -0400
+Processing by CheckoutsController#new as 
+Completed 404 Not Found in 32ms (ActiveRecord: 10.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book without an ID):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:50:32 -0400
+Processing by CheckoutsController#new as 
+Completed 400 Bad Request in 20ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: book):
+  
+app/controllers/books_controller.rb:46:in `book_params'
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:51:00 -0400
+Processing by CheckoutsController#new as 
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+Completed 404 Not Found in 30ms (ActiveRecord: 10.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=id):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:51:13 -0400
+Processing by CheckoutsController#new as 
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+Completed 404 Not Found in 28ms (ActiveRecord: 9.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=id):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.4" for 127.0.0.1 at 2018-05-23 10:51:41 -0400
+Processing by CheckoutsController#new as 
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 4.2ms)
+
+
+  
+NameError (undefined local variable or method `book_id' for #<CheckoutsController:0x00007fbf82f27a08>
+Did you mean?  book_url):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/" for 127.0.0.1 at 2018-05-23 10:54:39 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (1.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (114.1ms)
+Completed 200 OK in 225ms (Views: 161.6ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 10:54:42 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 91ms (Views: 73.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 10:54:43 -0400
+Processing by CheckoutsController#new as 
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/new.html.erb within layouts/application (46.1ms)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 7.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    3: 
+    4: <%= form_for(@checkout) do |f| %>
+    5:     <%= f.hidden_field :user_id, value: current_user.id %>
+    6:     <%= f.hidden_field :book_id, value: @book.id %>
+    7: 
+    8: 
+    9:     <button class="btn btn-primary mb-2" type="submit">Confirm</button>
+  
+app/views/checkouts/new.html.erb:6:in `block in _app_views_checkouts_new_html_erb__2895255152991530373_70230226311820'
+app/views/checkouts/new.html.erb:4:in `_app_views_checkouts_new_html_erb__2895255152991530373_70230226311820'
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 10:55:08 -0400
+Processing by CheckoutsController#new as 
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/new.html.erb within layouts/application (60.2ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 7.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    3: 
+    4: <%= form_for(@checkout) do |f| %>
+    5:     <%= f.hidden_field :user_id, value: current_user.id %>
+    6:     <%= f.hidden_field :book_id, value: @book.id %>
+    7: 
+    8: 
+    9:     <button class="btn btn-primary mb-2" type="submit">Confirm</button>
+  
+app/views/checkouts/new.html.erb:6:in `block in _app_views_checkouts_new_html_erb__2895255152991530373_70230228269920'
+app/views/checkouts/new.html.erb:4:in `_app_views_checkouts_new_html_erb__2895255152991530373_70230228269920'
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 11:09:16 -0400
+Processing by CheckoutsController#new as 
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/new.html.erb within layouts/application (68.9ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 35.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    3: 
+    4: <%= form_for(@checkout) do |f| %>
+    5:     <%= f.hidden_field :user_id, value: current_user.id %>
+    6:     <%= f.hidden_field :book_id, value: @book.id %>
+    7: 
+    8: 
+    9:     <button class="btn btn-primary mb-2" type="submit">Confirm</button>
+  
+app/views/checkouts/new.html.erb:6:in `block in _app_views_checkouts_new_html_erb__2895255152991530373_70230283779120'
+app/views/checkouts/new.html.erb:4:in `_app_views_checkouts_new_html_erb__2895255152991530373_70230283779120'
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 11:10:30 -0400
+Processing by CheckoutsController#new as 
+Completed 404 Not Found in 77ms (ActiveRecord: 33.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book without an ID):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 11:21:09 -0400
+Processing by CheckoutsController#new as 
+Completed 404 Not Found in 188ms (ActiveRecord: 44.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book without an ID):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started GET "/checkouts/new.5" for 127.0.0.1 at 2018-05-23 11:22:23 -0400
+Processing by CheckoutsController#new as 
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 11.2ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fbf82f47470>
+Did you mean?  try):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started PUT "/__web_console/repl_sessions/9218536303f615a857965c179fdf97fd" for 127.0.0.1 at 2018-05-23 11:22:29 -0400
+Started PUT "/__web_console/repl_sessions/9218536303f615a857965c179fdf97fd" for 127.0.0.1 at 2018-05-23 11:22:30 -0400
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 11:23:41 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (31.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (75.5ms)
+Completed 200 OK in 480ms (Views: 181.0ms | ActiveRecord: 77.8ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 11:23:43 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fbf7fb0a7c0>
+Did you mean?  try):
+  
+app/controllers/checkouts_controller.rb:9:in `new'
+Started PUT "/__web_console/repl_sessions/f7e8858e372272b23550a1a2758852fb" for 127.0.0.1 at 2018-05-23 11:23:49 -0400
+Started PUT "/__web_console/repl_sessions/f7e8858e372272b23550a1a2758852fb" for 127.0.0.1 at 2018-05-23 11:23:49 -0400
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 11:24:22 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 147ms (Views: 96.6ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 11:24:23 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 69ms (Views: 62.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 11:24:25 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 142ms (Views: 93.8ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 11:27:38 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 195ms (Views: 111.6ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 11:38:57 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (164.8ms)
+Completed 200 OK in 296ms (Views: 249.5ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:38:59 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (13.7ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" WHERE "checkouts"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 404 Not Found in 28ms (ActiveRecord: 13.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Checkout with 'id'=all):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/books" for 127.0.0.1 at 2018-05-23 11:44:25 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 216ms (Views: 169.7ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 11:44:27 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (1.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 59ms (Views: 52.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:44:29 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (10.7ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."id" IN ($1, $2)[0m  [["id", nil], ["id", 0]]
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 404 Not Found in 52ms (ActiveRecord: 26.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all Checkouts with 'id': (all, false) (found 0 results, but was looking for 2).):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/books" for 127.0.0.1 at 2018-05-23 11:47:32 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (3.0ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (81.4ms)
+Completed 200 OK in 335ms (Views: 307.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/books/2" for 127.0.0.1 at 2018-05-23 11:47:34 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 85ms (Views: 70.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/checkouts/new?book_id=2" for 127.0.0.1 at 2018-05-23 11:47:35 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"2"}
+  [1m[36mBook Load (31.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:11
+  Rendered checkouts/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 151ms (Views: 89.4ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/checkouts/new?book_id=2" for 127.0.0.1 at 2018-05-23 11:47:51 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"2"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:11
+  Rendered checkouts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 53ms (Views: 46.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2018-05-23 11:47:54 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YH+lNpluh0qLgBGvQPqUBoMLqpSaHBSVF53RjnYlkcxiQcfW5Ott2ytsp3SAPpMJmw+Vid3iBtB3ud4U531ocQ==", "checkout"=>{"user_id"=>"1", "book_id"=>"2"}}
+  [1m[35m (11.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mCheckout Create (38.6ms)[0m  [1m[32mINSERT INTO "checkouts" ("book_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["book_id", 2], ["user_id", 1], ["created_at", "2018-05-23 15:47:54.300487"], ["updated_at", "2018-05-23 15:47:54.300487"]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 107ms (ActiveRecord: 61.4ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:47:54 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.4ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."id" IN ($1, $2)[0m  [["id", nil], ["id", 0]]
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 404 Not Found in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all Checkouts with 'id': (all, false) (found 0 results, but was looking for 2).):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:48:52 -0400
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+...   @checkouts = Checkout.map( |obj|, obj.user_id == current_...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+...obj.user_id == current_user.id)
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:49:18 -0400
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+...checkouts = Checkout.all.map( |obj|, obj.user_id == current_...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+...obj.user_id == current_user.id)
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/books" for 127.0.0.1 at 2018-05-23 11:49:25 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 145ms (Views: 112.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:49:31 -0400
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+...checkouts = Checkout.all.map( |obj|, obj.user_id == current_...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+...obj.user_id == current_user.id)
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:49:41 -0400
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+...checkouts = Checkout.all.map( |obj| obj.user_id == current_u...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+...obj.user_id == current_user.id)
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected '|', expecting ')'
+app/controllers/checkouts_controller.rb:4: syntax error, unexpected ')', expecting keyword_end
+app/controllers/checkouts_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:50:43 -0400
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:5: syntax error, unexpected '|', expecting ')'
+    @checkouts = every.map( |obj| obj.user_id == current_u...
+                            ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:5: syntax error, unexpected ')', expecting keyword_end
+...obj.user_id == current_user.id)
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/controllers/checkouts_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/checkouts_controller.rb:5: syntax error, unexpected '|', expecting ')'
+app/controllers/checkouts_controller.rb:5: syntax error, unexpected ')', expecting keyword_end
+app/controllers/checkouts_controller.rb:36: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:51:08 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.8ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 14.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `book_id' for true:TrueClass):
+    14:     <tbody>
+    15:         <% @checkouts.each do |checkout| %>
+    16:             <tr>
+    17:                 <td><%= Book.find(params[checkout.book_id]).title %></td>
+    18:                 <td><%= Book.find(params[checkout.book_id]).language %></td>
+    19:                 <td><%= checkout.created_at %></td>
+    20:                 <td><%= link_to 'Remove from My List', checkout_path(checkout), class: "btn btn-outline-secondary", method: :delete %></td>
+  
+app/views/checkouts/index.html.erb:17:in `block in _app_views_checkouts_index_html_erb___3181035650136727081_70230275017580'
+app/views/checkouts/index.html.erb:15:in `each'
+app/views/checkouts/index.html.erb:15:in `_app_views_checkouts_index_html_erb___3181035650136727081_70230275017580'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 11:54:06 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (1.2ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (40.1ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 11.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book without an ID):
+  
+app/views/checkouts/index.html.erb:17:in `block in _app_views_checkouts_index_html_erb___3181035650136727081_70230262584640'
+app/views/checkouts/index.html.erb:15:in `each'
+app/views/checkouts/index.html.erb:15:in `_app_views_checkouts_index_html_erb___3181035650136727081_70230262584640'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 12:04:17 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (1.4ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  Rendered checkouts/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 2.3ms)
+
+
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/views/checkouts/index.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+...           <td>'.freeze; :fid = checkout.book_id ;@output_bu...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/views/checkouts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/checkouts/index.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+app/views/checkouts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 12:05:34 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.8ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  Rendered checkouts/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.6ms)
+
+
+  
+SyntaxError (/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/views/checkouts/index.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+...       <td>'.freeze; :book_id = checkout.book_id ;@output_bu...
+...                              ^
+/Users/mollybrown/Momentum_homework/rails-freeshelf-1-molbrown/free_shelf/app/views/checkouts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/checkouts/index.html.erb:17: syntax error, unexpected '=', expecting keyword_end
+app/views/checkouts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 13:17:30 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (13.6ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (19.3ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 42.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `book_id' for true:TrueClass):
+    14:     <tbody>
+    15:         <% @checkouts.each do |checkout| %>
+    16:             <tr>
+    17:                 <td><%= checkout.book_id %></td>
+    18:                 <%# <td><%= book.language</td> %>
+    19:                 <%# <td><%= checkout.created_at %></td> %>
+    20:                 <%# <td><%= link_to 'Remove from My List', checkout_path(checkout), class: "btn btn-outline-secondary", method: :delete %></td> %>
+  
+app/views/checkouts/index.html.erb:17:in `block in _app_views_checkouts_index_html_erb___3181035650136727081_70230232110380'
+app/views/checkouts/index.html.erb:15:in `each'
+app/views/checkouts/index.html.erb:15:in `_app_views_checkouts_index_html_erb___3181035650136727081_70230232110380'
+Started GET "/" for 127.0.0.1 at 2018-05-23 15:32:42 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (19.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (6.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (2.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (222.2ms)
+Completed 200 OK in 489ms (Views: 250.0ms | ActiveRecord: 80.7ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2018-05-23 15:34:19 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (35.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 619ms (Views: 345.6ms | ActiveRecord: 49.3ms)
+
+
+Started GET "/checkouts/new?book_id=3" for 127.0.0.1 at 2018-05-23 15:34:50 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"3"}
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:11
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:11
+  Rendered checkouts/new.html.erb within layouts/application (62.2ms)
+Completed 200 OK in 255ms (Views: 203.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2018-05-23 15:35:11 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Heko8ldyZKevtQ9EO3e2xLBCG7F7ZQhRsmY2m6I53jdhCDYoaAWZK5eot14kK+LYFO0QXDIM4pzGb9vWDBaRsQ==", "checkout"=>{"user_id"=>"1", "book_id"=>"3"}}
+  [1m[35m (25.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mCheckout Create (51.5ms)[0m  [1m[32mINSERT INTO "checkouts" ("book_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["book_id", 3], ["user_id", 1], ["created_at", "2018-05-23 19:35:11.270190"], ["updated_at", "2018-05-23 19:35:11.270190"]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:16
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 163ms (ActiveRecord: 91.0ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:35:11 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (0.6ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendered checkouts/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `book_id' for true:TrueClass):
+    14:     <tbody>
+    15:         <% @checkouts.each do |checkout| %>
+    16:             <tr>
+    17:                 <td><%= checkout.book_id %></td>
+    18:                 <%# <td><%= book.language</td> %>
+    19:                 <%# <td><%= checkout.created_at %></td> %>
+    20:                 <%# <td><%= link_to 'Remove from My List', checkout_path(checkout), class: "btn btn-outline-secondary", method: :delete %></td> %>
+  
+app/views/checkouts/index.html.erb:17:in `block in _app_views_checkouts_index_html_erb___3181035650136727081_70230275795000'
+app/views/checkouts/index.html.erb:15:in `each'
+app/views/checkouts/index.html.erb:15:in `_app_views_checkouts_index_html_erb___3181035650136727081_70230275795000'
+Started GET "/" for 127.0.0.1 at 2018-05-23 15:37:58 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (179.9ms)
+Completed 200 OK in 264ms (Views: 150.9ms | ActiveRecord: 92.6ms)
+
+
+Started GET "/books/7" for 127.0.0.1 at 2018-05-23 15:38:07 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (7.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 108ms (Views: 78.9ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/checkouts/new?book_id=7" for 127.0.0.1 at 2018-05-23 15:38:09 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"7"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:11
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:11
+  Rendered checkouts/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 139ms (Views: 92.4ms | ActiveRecord: 20.8ms)
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2018-05-23 15:38:11 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DcvcV843kPMBLZL3bnsXubioxZmpJrBCHfgBznRMpxNxKsKN8UBtfzkwKu1xJ0OlHAfOdOBPWo9p8eyD2mPolQ==", "checkout"=>{"user_id"=>"1", "book_id"=>"7"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[36mCheckout Create (6.6ms)[0m  [1m[32mINSERT INTO "checkouts" ("book_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["book_id", 7], ["user_id", 1], ["created_at", "2018-05-23 19:38:11.526005"], ["updated_at", "2018-05-23 19:38:11.526005"]]
+  ↳ app/controllers/checkouts_controller.rb:16
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:16
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 23ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:38:11 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.8ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  Rendered checkouts/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 179ms (Views: 89.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:39:39 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.5ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 273ms (Views: 216.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:39:48 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (1.9ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 178ms (Views: 165.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 15:43:34 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 209ms (Views: 160.7ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:43:43 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.3ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 90ms (Views: 73.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 15:43:46 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.6ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 73ms (Views: 65.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 15:43:53 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (3.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (1.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.7ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 152ms (Views: 136.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 16:11:40 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 519ms (Views: 410.4ms | ActiveRecord: 42.7ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:11:44 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:11
+  Rendered checkouts/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 173ms (Views: 106.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:16:57 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (3.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:12
+  Rendered checkouts/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 637ms (Views: 611.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:17:11 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:12
+  Rendered checkouts/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 108ms (Views: 93.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:17:48 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:12
+  Rendered checkouts/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 84ms (Views: 70.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:18:51 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:12
+  Rendered checkouts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 97ms (Views: 86.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:20:02 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:14
+  Rendered checkouts/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 107ms (Views: 99.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:20:32 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:14
+  Rendered checkouts/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 90ms (Views: 79.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2018-05-23 16:21:31 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JPdJfBdiR9b6H7kSysjY/6TyV3oMn8r5JtFtbN+RKrQmySucauetR1rzD8kKDN/wvPZoZ0th2LxG9WL2TsnTCQ==", "checkout"=>{"user_id"=>"1", "book_id"=>"5"}}
+  [1m[35m (11.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mCheckout Create (37.0ms)[0m  [1m[32mINSERT INTO "checkouts" ("book_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["book_id", 5], ["user_id", 1], ["created_at", "2018-05-23 20:21:32.131386"], ["updated_at", "2018-05-23 20:21:32.131386"]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 167ms (ActiveRecord: 64.3ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:21:32 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.6ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 181ms (Views: 165.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-05-23 16:21:36 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:22
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:25
+  Rendered books/index.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 169ms (Views: 132.8ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2018-05-23 16:21:38 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:20
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:7
+  Rendered books/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 92ms (Views: 78.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/checkouts/new?book_id=5" for 127.0.0.1 at 2018-05-23 16:21:41 -0400
+Processing by CheckoutsController#new as HTML
+  Parameters: {"book_id"=>"5"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:9
+  Rendering checkouts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/checkouts/new.html.erb:14
+  Rendered checkouts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 143ms (Views: 131.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/checkouts" for 127.0.0.1 at 2018-05-23 16:21:42 -0400
+Processing by CheckoutsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6fnxlhbMP8zoWYeiNx3qbv3CpmE5NywXEJSqNRGb8hSVGO9MKbvCQNBEP7goQb5yWW2tjHBextpknUd4v7S9kg==", "checkout"=>{"user_id"=>"1", "book_id"=>"5"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[36mCheckout Create (6.0ms)[0m  [1m[32mINSERT INTO "checkouts" ("book_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["book_id", 5], ["user_id", 1], ["created_at", "2018-05-23 20:21:42.641917"], ["updated_at", "2018-05-23 20:21:42.641917"]]
+  ↳ app/controllers/checkouts_controller.rb:14
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:14
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 26ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:21:42 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.4ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 99ms (Views: 92.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:22:28 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.6ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mCACHE Book Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 239ms (Views: 204.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:23:58 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (1.4ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (3.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (103.3ms)
+Completed 200 OK in 390ms (Views: 337.9ms | ActiveRecord: 8.9ms)
+
+
+Started DELETE "/checkouts/5" for 127.0.0.1 at 2018-05-23 16:24:05 -0400
+Processing by CheckoutsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kzGd9MQHh3RivRxbB/7VoY6pJqUIIpmZgtx440ZxhoCRD/8UuYJt5cJRqoDHOtKulq0ZuE/ci9zi+Hd51yl/PQ==", "id"=>"5"}
+  [1m[36mCheckout Load (0.3ms)[0m  [1m[34mSELECT  "checkouts".* FROM "checkouts" WHERE "checkouts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/checkouts_controller.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/checkouts_controller.rb:23
+  [1m[36mCheckout Destroy (19.1ms)[0m  [1m[31mDELETE FROM "checkouts" WHERE "checkouts"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/checkouts_controller.rb:23
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/checkouts_controller.rb:23
+Redirected to http://localhost:3000/checkouts
+Completed 302 Found in 35ms (ActiveRecord: 27.2ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:24:05 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  Rendering checkouts/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "molbrown"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCheckout Load (0.3ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts" WHERE "checkouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/checkouts/index.html.erb:15
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/checkouts/index.html.erb:17
+  Rendered checkouts/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 99ms (Views: 89.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 16:27:53 -0400
+Processing by CheckoutsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `checkouts' for nil:NilClass):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 20:33:46 -0400
+Processing by CheckoutsController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `checkout' for nil:NilClass):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started PUT "/__web_console/repl_sessions/71d90cef09b3dcf0a6c9834b6d6921a6" for 127.0.0.1 at 2018-05-23 20:33:54 -0400
+Started PUT "/__web_console/repl_sessions/71d90cef09b3dcf0a6c9834b6d6921a6" for 127.0.0.1 at 2018-05-23 20:33:56 -0400
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 20:36:28 -0400
+Processing by CheckoutsController#index as HTML
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<Class:0x00007fbf863d40a8>
+Did you mean?  current_scope):
+  
+app/controllers/checkouts_controller.rb:4:in `index'
+Started GET "/checkouts" for 127.0.0.1 at 2018-05-23 20:41:59 -0400
+Processing by CheckoutsController#index as HTML
+  [1m[36mCheckout Load (29.0ms)[0m  [1m[34mSELECT "checkouts".* FROM "checkouts"[0m
+  ↳ app/controllers/checkouts_controller.rb:4
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 78.6ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/checkouts_controller.rb:4:in `block in index'
+app/controllers/checkouts_controller.rb:4:in `map'
+app/controllers/checkouts_controller.rb:4:in `index'
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4637570525149033815)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToUser (20180524005457)
+  [1m[35m (11.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (30.7ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  ↳ db/migrate/20180524005457_add_password_digest_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180524005457"]]
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (19.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4637570525149033815)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/mollybrown/.rbenv/versions/2.5.0/bin/annotate:23

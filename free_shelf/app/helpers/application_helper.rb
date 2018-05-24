@@ -8,4 +8,4 @@ module ApplicationHelper
             "alert"
         end
     end
-  end
+end
