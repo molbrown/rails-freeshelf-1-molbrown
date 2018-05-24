@@ -5,7 +5,11 @@ class AuthorsController < ApplicationController
     end
 
     def new
-        @author = Author.new
+        if current_user
+            @author = Author.new
+        else
+            redirect_to new_login_path, alert: "Please log in first."
+        end
     end
 
     def create
@@ -22,12 +26,15 @@ class AuthorsController < ApplicationController
     end
 
     def edit
-        @author = Author.find(params[:id])
+        if current_user
+            @author = Author.find(params[:id])
+        else
+            redirect_to new_login_path, alert: "Please log in first."
+        end
     end
 
     def update
         @author = Author.find(params[:id])
-        
         if @author.update(author_params)
             redirect_to authors_path 
         else
@@ -36,9 +43,9 @@ class AuthorsController < ApplicationController
     end
 
     # def destroy
-    #     @book = Book.find(params[:id])
-    #     @book.destroy
-    #     redirect_to books_path
+    #     @author = Author.find(params[:id])
+    #     @author.destroy
+    #     redirect_to authors_path
     # end
 
 

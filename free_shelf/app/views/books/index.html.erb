@@ -1,13 +1,12 @@
 <div class="container">
-<div class="text-right text-secondary w-100 my-3">Logged in as <%= current_user.username %></div>
-<div class="text-success">
+<%# <div class="text-success">
   <%= notice %>
-</div>
+<%# </div> %>
 <h1 class='my-3'>Welcome to FreeShelf</h1>
 <h3 class="font-weight-light">A library of online programming books, available for free</h3>
 <div class='row justify-content-center'>
-<%= link_to 'Add a Book', new_book_path, class: "btn btn-outline-primary m-3 col-4" %>
-<%= link_to 'View My Reading List', checkouts_path, class: "btn btn-outline-primary m-3 col-4" %>
+<%= link_to 'Add a Book', new_book_path, class: "btn btn-primary m-3 col-4" %>
+<%= link_to 'View My Reading List', checkouts_path, class: "btn btn-primary m-3 col-4" %>
 </div>
 <table class='table table-striped'>
     <thead>

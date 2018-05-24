@@ -1,7 +1,11 @@
 class CheckoutsController < BooksController
 
 def index
-    @checkouts = Checkout.all.map{ |co| co.user_id == current_user.id }
+    if current_user
+        @checkouts = current_user.checkouts
+    else
+        redirect_to new_login_path, alert: "Please log in first."
+    end
 end
 
 def new
