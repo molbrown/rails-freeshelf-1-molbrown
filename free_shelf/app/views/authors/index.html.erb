@@ -1,0 +1,28 @@
+<div class="container">
+<h1 class='my-3'>Authors</h1>
+
+<%= link_to 'Add an Author', new_author_path, class: "btn btn-primary m-3" %>
+
+<table class='table table-bordered'>
+    <thead class='thead-light'>
+        <tr>
+            <th>Name</th>
+            <th>Books</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @authors.each do |a| %>
+            <tr>
+                <td><%= a.name %></td>
+                <td><% selected = @books.select { |b| b.author == a } %>
+                <% titles = selected.map { |book| book.title }%>
+                <%= titles.join(', ')%></td>
+                <td><%= link_to 'Edit Author', edit_author_path(a), class: "btn btn-outline-secondary" %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= link_to 'Home', books_path, class: "btn btn-outline-primary" %>
+</div>

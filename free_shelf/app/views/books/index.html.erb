@@ -1,0 +1,31 @@
+<div class="container">
+<%# <div class="text-success">
+  <%= notice %>
+<%# </div> %>
+<h1 class='my-3'>Welcome to FreeShelf</h1>
+<h3 class="font-weight-light">A library of online programming books, available for free</h3>
+<div class='row justify-content-center'>
+<%= link_to 'Add a Book', new_book_path, class: "btn btn-primary m-3 col-4" %>
+<%= link_to 'View My Reading List', checkouts_path, class: "btn btn-primary m-3 col-4" %>
+</div>
+<table class='table table-striped'>
+    <thead>
+        <tr class="table-primary">
+            <th>Book</th>
+            <th><%= link_to 'Authors', authors_path, class: "btn btn-secondary" %></th>
+            <th>Language</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @books.each do |book| %>
+            <tr>
+                <td><%= book.title %></td>
+                <td><%= book.author.name %></td>
+                <td><%= book.language %></td>
+                <td><%= link_to 'View Details', book_path(book), class: "btn btn-outline-secondary" %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+</div>

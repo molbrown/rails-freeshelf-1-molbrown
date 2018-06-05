@@ -1,0 +1,30 @@
+<div class='container'>
+<%# <div class="text-right text-secondary w-100 my-3">Logged in as <%= current_user.username %></div>
+<h1><%= current_user %>'s Current Books</h1>
+
+<table class='table table-striped'>
+    <thead>
+        <tr class="table-primary">
+            <th>Book</th>
+            <th>Language</th>
+            <th>Date Added</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @checkouts.each do |checkout| %>
+            <tr>
+                <td><%= checkout.book.title %></td>
+                <td><%= checkout.book.language %></td>
+                <td><%= checkout.created_at %></td>
+                <td><%= link_to 'Remove from My List', checkout_path(checkout), class: "btn btn-outline-secondary", method: :delete %></td>
+
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= link_to 'Home', books_path, class: "btn btn-outline-primary" %>
+
+
+</div>
