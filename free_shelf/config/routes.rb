@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   
+  namespace :admin do
+      resources :authors
+      resources :books
+      resources :checkouts
+      resources :users
+
+      root to: "authors#index"
+    end
   resources :books
 
   resources :authors

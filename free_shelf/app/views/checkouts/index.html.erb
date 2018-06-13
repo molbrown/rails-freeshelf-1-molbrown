@@ -14,8 +14,8 @@
     <tbody>
         <% @checkouts.each do |checkout| %>
             <tr>
-                <td><%= checkout.book.title %></td>
-                <td><%= checkout.book.language %></td>
+                <td><%= checkout.book_to_read.title %></td>
+                <td><%= checkout.book_to_read.language %></td>
                 <td><%= checkout.created_at %></td>
                 <td><%= link_to 'Remove from My List', checkout_path(checkout), class: "btn btn-outline-secondary", method: :delete %></td>
 

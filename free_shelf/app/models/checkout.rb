@@ -11,7 +11,7 @@
 
 class Checkout < ApplicationRecord
 
-    belongs_to :book
-    belongs_to :user
+    belongs_to :books_to_read, foreign_key: :book_id, class_name: 'Book' 
+    belongs_to :reader, foreign_key: :user_id, class_name: 'User'
 
 end

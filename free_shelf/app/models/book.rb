@@ -16,7 +16,8 @@
 
 class Book < ApplicationRecord
   belongs_to :author
-  has_many :users, through: :checkouts
+  has_many :checkouts
+  has_many :readers, through: :checkouts, class_name: 'User'
   belongs_to :user
 
   # mount_uploader :image, ImageUploader
