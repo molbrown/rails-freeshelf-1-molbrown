@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :checkouts
       resources :users
 
-      root to: "authors#index"
+      root to: "books#index"
     end
   resources :books
 
