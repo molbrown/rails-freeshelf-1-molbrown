@@ -11,6 +11,7 @@ end
 def new
     @checkout = Checkout.new
     @book = Book.find(params[:book_id])
+    @id = @book.id
 end
 
 def create
@@ -18,7 +19,7 @@ def create
     if @checkout.save
         redirect_to checkouts_url, notice: "You have added a book to your reading list."
     else
-        render :new
+        redirect_to book_path(@id)
     end
 end
 
@@ -29,11 +30,10 @@ def destroy
 end
 
 
-
-
-def checkout_params
-    params.require(:checkout).permit(:book_id, :user_id)
-end
+private
+    def checkout_params
+        params.require(:checkout).permit(:book_id, :user_id)
+    end
 
 
 end
